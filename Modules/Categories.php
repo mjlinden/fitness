@@ -8,7 +8,7 @@
         return $categories;
     }
 
-    function getCategoryName(int $id)
+    function getCategoryName( $id)
     {
         GLOBAL $pdo;
         $sth=$pdo->prepare('SELECT * FROM category WHERE id= ? ');

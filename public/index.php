@@ -4,9 +4,10 @@
     require '../Modules/Details.php';
     require '../Modules/Database.php';
 
-    $request  = str_replace("/healthone/", "", $_SERVER['REQUEST_URI']);
+    $request  =  substr($_SERVER['REQUEST_URI'], 1);
+    var_dump($request);
     $params   = explode("/", $request);
-
+    var_dump($params);
     switch($params[0]) {
         case 'categories':
             $categories= getCategories();

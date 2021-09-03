@@ -12,8 +12,8 @@
                        <div class="collapse navbar-collapse" id="myNavbar">
                            <ul class="nav navbar-nav">
 
-                                 <li><a href="/healthone/home">home</a></li>
-                                    <li><a href="/healthone/categories">aanbod</a></li>
+                                 <li><a href="/home">home</a></li>
+                                    <li><a href="/categories">aanbod</a></li>
 
 
                                     <li><a href="#">registreren</a></li>

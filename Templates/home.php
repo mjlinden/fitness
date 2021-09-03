@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>HealthOne!</title>
-    <link rel="stylesheet" href='/healthone/public/css/bootstrap.min.css' />
-    <script src='/healthone/public/js/jquery-3.2.1.min.js'></script>
-    <script src='/healthone/public/js/bootstrap.min.js'></script>
+    <?php
+        include_once ('defaults/head.php');
+    ?>
 </head>
 
 <body style="background-color: gainsboro">

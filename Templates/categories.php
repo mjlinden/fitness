@@ -4,9 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>HealthOne!</title>
-        <link rel="stylesheet" href='/healthone/public/css/bootstrap.min.css' />
-        <script src='/healthone/public/js/jquery-3.2.1.min.js'></script>
-        <script src='/healthone/public/js/bootstrap.min.js'></script>
+        <link rel="stylesheet" href='css/bootstrap.min.css' />
+        <script src='js/jquery-3.2.1.min.js'></script>
+        <script src='js/bootstrap.min.js'></script>
+        <base href="http://healthone/" target="_blank">
     </head>
 
     <body style="background-color: gainsboro">
@@ -26,7 +27,7 @@
                         <div class="panel-heading"><?=$category->name?></div>
                         <a href="products/<?=$category->id?>">
                             <div class="panel-body">
-                                <img class="img-responsive center-block" style="width:70%" src='/healthone/public/img/<?= $category->picture ?>' />
+                                <img class="img-responsive center-block" style="width:70%" src='img/<?= $category->picture ?>' />
                             </div>
                         </a>
                     </div>

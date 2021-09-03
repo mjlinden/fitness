@@ -1,4 +1,9 @@
 RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-f
 
-RewriteRule ^(.*)$ /healthone/public/index.php [NC,L,QSA]
+# Rewrite all the default paths to public e.g. /css/style.css -> /public/css/style.css
+RewriteCond %{REQUEST_URI} !/public
+RewriteRule ^(.*)$ public/$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /public/index.php [NC,L,QSA]
+
